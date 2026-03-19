@@ -6,5 +6,23 @@ namespace EchoMessenger
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 전송_Click(object sender, EventArgs e)
+        {
+            string typed_msg = textBox1.Text;
+            Echowindow.Items.Add(typed_msg);
+            textBox1.Clear();
+        }
     }
 }
