@@ -23,6 +23,9 @@ namespace EchoMessenger
             string typed_msg = textBox1.Text;
             Echowindow.Items.Add(typed_msg);
             textBox1.Clear();
+
+            string time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); string msg = "Hello"; string result = time + " " + msg;
         }
     }
 }
+       
